@@ -1,0 +1,26 @@
+
+<script>
+    const card = document.getElementById('card');
+    function addToCard(food) {
+      const newDiv = document.createElement('div');
+      newDiv.innerText = food;
+      document.getElementById("card").appendChild(newDiv);
+
+
+
+    }
+    function clear() {
+      card.innerHTML = '';
+
+    }
+
+  </script>
+
+
+  <div id="card"> </div>
+  <button onclick="addToCard(Apple)">Apple</button>
+  <button onclick="addToCard(Tomato)">Tomato</button>
+  <button onclick="addToCard(Eggs)">Eggs</button>
+  <button onclick="clear()">Clear</button>
+
+

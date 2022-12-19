@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <title>Ahoojk</title>
+</head>
+
+<body>
+  <button>Dowsn</button>
+  <button>Uaap</button>
+  <script>
+    let todo1 = 'Get gloceries';
+    let todo2 = 'Wash car';
+    let todo3 = 'Make dinner';
+
+    function AddTodo(todoTitle) {
+      let element = document.createElement('div');
+      element.innerText = todoTitle;
+      document.body.appendChild(element);
+
+    }
+  
+    AddTodo(todo1);
+    AddTodo(todo2);
+    AddTodo(todo3);
+    greeting('Jirka')
+    toUpper('jirka')
+    inchToCm(10);
+
+    function greeting(firstName) {
+
+      console.log('Hello ' + firstName);
+    }
+
+    function toUpper(text) {
+      let result = text.toUpperCase();
+      console.log(result);
+
+    }
+
+    function inchToCm (inch) {
+
+      console.log(inch * 2.54);
+    }
+
+
+
+    document.title = 'newPageTitle';
+  </script>
+</body>

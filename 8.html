@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      let newContent = document.getElementById("publish-text").value;
+      function changeTextButton () {
+
+        document.getElementById("todo-button").innerText="DONE";
+        
+      }
+
+      function increment () {
+
+        let number = parseInt(document.getElementById("counter").innerText);
+        number = number + 1;
+        document.getElementById("counter").innerText=number;
+        
+      }
+
+      function decrement() {
+
+        let number = parseInt(document.getElementById("counter").innerText);
+        number = number - 1;
+        document.getElementById("counter").innerText=number;
+      }
+      function publisPost() {
+
+        let post = document.createElement("div");
+        post.innerText = document.getElementById("publish-text").value;
+        document.body.appendChild(post);
+        document.getElementById("publish-text").value = '';
+
+
+
+
+      }
+
+    </script>
+  </head>
+  <body>
+    <button id="todo-button" onclick="changeTextButton()">Button</button>
+    <div id="counter">10</div>
+    <button id="increment" onclick="increment()">Up</button>
+    <button id="decrement" onclick="decrement()">Down</button>
+    <input id="publish-text" type="text"/>
+    <button id="publish-button" onclick="publisPost()">Publish</button>
+  </body>
+</html>

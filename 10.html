@@ -1,0 +1,34 @@
+<script>
+
+  
+
+  function toCm() {
+    document.getElementById("result").innerHTML = "";
+
+    const input = document.getElementById("input").value;
+    const result = document.createElement("div");
+    
+    const outputValue = input / 2.54;
+    result.innerText = outputValue + " cm";
+    document.getElementById("result").appendChild(result);   
+  }
+
+  function toInch() {
+
+    document.getElementById("result").innerHTML = "";
+    
+    const input = document.getElementById("input").value;
+    const result = document.createElement("div");
+
+    const outputValue = input * 2.54;
+    result.innerText = outputValue + " inch";
+    document.getElementById("result").appendChild(result);   
+  }
+
+</script>
+
+
+<input type="text" id="input"/>
+<button id="convertToCm" onclick="toCm()">Convert to cm</button>
+<button id="convertToInch" onclick="toInch()">Convert to inch</button>
+<div id="result"></div>

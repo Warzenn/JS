@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      let array = ['hello','world'];
+      let numbers = [1, 3, 4, -5];
+
+      toUpper(array);
+      arrayDouble(array);
+      arraySum(numbers);
+     
+
+      function toUpper(stringArray) {
+        let upper = [];
+        upper = stringArray.map(element => {
+          return element.toUpperCase();
+        })
+
+        console.log(upper);
+      }
+
+
+      function arrayDouble (array) {
+        let doubleArray = [];
+        array.forEach(element => {
+          doubleArray.push(element,element);
+        });
+        console.log(doubleArray);
+
+      }
+      function arraySum(array) {
+        let sum = 0;
+        array.forEach(element => {
+          sum = sum + element;
+        
+        })
+        console.log(sum);
+        
+      }
+
+
+
+    </script>
+  </head>
+  <body>
+    <div> Hello boys</div>
+  
+  </body>
+
+
+</html>  
